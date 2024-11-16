@@ -15,7 +15,7 @@
 This repository contains all the configurations (Husky , ESLint, Pretties, Conventional Commits and Pint). Only execute the follow commands after clone:
 
 ```bash
-npx install husky
+yarn husky
 
 cp .env-example .env
 
@@ -23,7 +23,7 @@ composer install
 
 php artisan key:generate
 
-npm install
+yarn
 ```
 
 Finally, change database data in .env file.
