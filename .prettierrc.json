@@ -1,0 +1,29 @@
+{
+    "$schema": "https://json.schemastore.org/prettierrc",
+    "arrowParens": "always",
+    "bracketSameLine": false,
+    "bracketSpacing": true,
+    "endOfLine": "auto",
+    "insertPragma": false,
+    "jsxSingleQuote": false,
+    "plugins": [
+        "prettier-plugin-tailwindcss"
+    ],
+    "printWidth": 100,
+    "proseWrap": "preserve",
+    "quoteProps": "as-needed",
+    "requirePragma": false,
+    "semi": false,
+    "singleQuote": true,
+    "tabWidth": 2,
+    "tailwindAttributes": [
+        "class",
+        "className"
+    ],
+    "tailwindFunctions": [
+        "clsx",
+        "cn"
+    ],
+    "trailingComma": "none",
+    "useTabs": false
+}

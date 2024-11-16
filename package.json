@@ -1,0 +1,55 @@
+{
+  "name": "vue-laravel-starter",
+  "description": "A starter template for Vue.js and Laravel projects",
+  "author": "Chi Thanh Dang (tist)",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "format-php": "./vendor/bin/pint --preset laravel ./**/*.php",
+    "lint": "eslint ./ --ext .vue,.js,.cjs --fix --ignore-path .gitignore",
+    "pre-commit": "lint-staged --allow-empty",
+    "prettier:check": "prettier --check 'resources/{js,vue}/**/*.{js,vue}'",
+    "prettier:fix": "prettier --write 'resources/{js,vue}/**/*.{js,vue}'",
+    "format": "yarn prettier:check & yarn prettier:fix"
+  },
+  "resolutions": {
+    "laravel-mix/laravel-mix": "^6.0.49"
+  },
+  "dependencies": {
+    "@tabler/icons-webfont": "^2.34.0",
+    "@vueuse/core": "^10.4.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.7.1",
+    "@commitlint/config-conventional": "^17.7.0",
+    "@inertiajs/vue3": "^1.0.0",
+    "@rushstack/eslint-patch": "^1.4.0",
+    "@tailwindcss/forms": "^0.5.3",
+    "@vitejs/plugin-vue": "^4.0.0",
+    "@vue/eslint-config-prettier": "^8.0.0",
+    "autoprefixer": "^10.4.12",
+    "axios": "^1.1.2",
+    "eslint": "^8.49.0",
+    "eslint-plugin-vue": "^9.17.0",
+    "husky": "^8.0.3",
+    "laravel-vite-plugin": "^0.8.0",
+    "lint-staged": "^14.0.1",
+    "postcss": "^8.4.18",
+    "prettier": "^3.0.3",
+    "prettier-plugin-tailwindcss": "^0.6.8",
+    "tailwindcss": "^3.2.1",
+    "vite": "^4.0.0",
+    "vue": "^3.2.41"
+  },
+  "lint-staged": {
+    "resources/{js,vue}/**/*.{js,vue}": [
+      "eslint --fix --ignore-path .gitignore",
+      "prettier --write"
+    ],
+    "**/*.php": "./vendor/bin/pint --preset laravel"
+  }
+}
