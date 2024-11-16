@@ -17,9 +17,6 @@
     "prettier:fix": "prettier --write 'resources/{js,vue}/**/*.{js,vue}'",
     "format": "yarn prettier:check & yarn prettier:fix"
   },
-  "engines": {
-    "node": ">=20.18.0"
-  },
   "resolutions": {
     "laravel-mix/laravel-mix": "^6.0.49"
   },
